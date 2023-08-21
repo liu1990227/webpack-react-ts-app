@@ -12,10 +12,3 @@ createRoot(document.querySelector('#webpack-app')).render(
     </div>
   </>,
 );
-
-const f = () => {
-  const a = 3;
-  if (a) {
-    b = 2;
-  }
-};

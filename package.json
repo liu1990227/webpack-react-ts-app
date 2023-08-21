@@ -1,7 +1,12 @@
 {
   "scripts": {
     "build": "webpack",
-    "dev": "webpack server"
+    "dev": "webpack server",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.tsx|*.ts|*.jsx|*.js": "eslint --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
