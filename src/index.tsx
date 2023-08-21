@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-import { Button } from './components/button';
+import { Button } from '@/components/button';
 
 import './index.css';
 
