@@ -11,11 +11,11 @@ createRoot(document.querySelector('#webpack-app')).render(
       <Button />
     </div>
   </>,
-)
+);
 
 const f = () => {
   const a = 3;
-if(a) {
- b = 2
-}
-}
+  if (a) {
+    b = 2;
+  }
+};
