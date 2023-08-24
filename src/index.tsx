@@ -1,14 +1,10 @@
 import { createRoot } from 'react-dom/client';
 
-import { Button } from '@/components/button';
-
 import './index.css';
+import { Demo } from './components/demo';
 
 createRoot(document.querySelector('#webpack-app')).render(
   <>
-    <div style={{ display: 'flex', columnGap: 8 }}>
-      <Button />
-      <Button />
-    </div>
+    <Demo />
   </>,
 );
