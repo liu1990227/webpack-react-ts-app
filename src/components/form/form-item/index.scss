@@ -1,0 +1,31 @@
+.formItem {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+
+  .label {
+  }
+
+  .componentWrapper {
+    .subLabel {
+    }
+
+    .component {
+    }
+
+    .description {
+    }
+
+    .error {
+      color: red;
+    }
+
+    .warn {
+      color: orange;
+    }
+  }
+
+  &.errorItem {
+  }
+}

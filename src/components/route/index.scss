@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  gap: 20px;
+  min-height: 800px;
+
+  .menu {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: gray thin solid;
+    border-radius: 10px;
+  }
+
+  .page {
+    background-color: white;
+    flex: 1;
+  }
+}
