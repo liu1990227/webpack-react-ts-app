@@ -1,0 +1,66 @@
+.groupLine {
+  position: relative;
+  display: inline-block;
+
+  .content {
+    position: relative;
+    background-color: white;
+  }
+
+  .line {
+    position: absolute;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    box-sizing: border-box;
+
+    &.lineJoin {
+      border-top: lightgray 2px solid;
+      width: calc(100% + 50px);
+
+      &.isFirstGroup {
+        margin-left: 0px;
+      }
+
+      &.isLastGroup {
+        margin-left: -50px;
+      }
+    }
+
+    &.lineTop.visible {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 15px;
+        height: 50%;
+        margin-left: -15px;
+        border: lightgray 2px solid;
+        border-bottom: none;
+        border-left: none;
+        border-top-right-radius: 10px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 15px;
+        height: 50%;
+        margin-right: -15px;
+        border: lightgray 2px solid;
+        border-bottom: none;
+        border-right: none;
+        border-top-left-radius: 10px;
+      }
+    }
+
+    &.lineBottom.visible {
+      border-end-start-radius: 10px;
+      border-end-end-radius: 10px;
+      border: lightgray 2px solid;
+      border-top: none;
+    }
+  }
+}

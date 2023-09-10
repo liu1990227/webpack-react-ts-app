@@ -29,6 +29,7 @@ const baseConfig: Configuration = {
     port: 8080,
     open: true,
     hot: true,
+    historyApiFallback: true,
   },
 
   entry: './src/index.tsx',

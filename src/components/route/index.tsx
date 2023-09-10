@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useMemo, useState } from 'react';
+import { ReactNode, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { Route, RouteContext } from './hooks/use-route';
 
 import styles from './index.scss';
@@ -56,6 +56,10 @@ export const Router = ({ routes, defaultPath, children }: RouteProps) => {
     window.addEventListener('popstate', updatePath);
 
     return () => window.removeEventListener('popstate', updatePath);
+  }, []);
+
+  useLayoutEffect(() => {
+    setPath(location.pathname);
   }, []);
 
   return <RouteContext.Provider value={{ route, path, setPath }}>{children ?? configChildren}</RouteContext.Provider>;
