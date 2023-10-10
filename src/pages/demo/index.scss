@@ -1,0 +1,15 @@
+.gapWrapper {
+  outline: blue thin solid;
+  display: flex;
+  flex-direction: column;
+
+  &.polyfill > .item:not(:first-child) {
+    background-color: lightgray;
+    // margin-left: var(--size);
+    margin-top: var(--size);
+  }
+
+  .item {
+    outline: red thin solid;
+  }
+}

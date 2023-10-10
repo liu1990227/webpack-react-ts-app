@@ -1,0 +1,41 @@
+.button {
+  --padding: 24px;
+  --border-radius: 48px;
+
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  color: #5f6671;
+  border: none;
+  font-size: 28px;
+  font-weight: 500;
+
+  &.small {
+    padding: calc(var(--padding) * 0.8);
+    border-radius: calc(val(--border-radius) * 0.8);
+  }
+
+  &.middle {
+  }
+
+  .large {
+    padding: calc(var(--padding) * 1.2);
+    border-radius: calc(val(--border-radius) * 1.2);
+  }
+
+  &.light {
+    background: #fafafa;
+  }
+
+  &.dark {
+    color: white;
+    background: linear-gradient(90deg, #242b38 1.29%, #2b495a 100.8%);
+  }
+
+  &.disabled {
+    opacity: 0.8;
+  }
+
+  &.block {
+    width: 100%;
+  }
+}
